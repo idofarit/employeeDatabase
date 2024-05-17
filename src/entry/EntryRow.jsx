@@ -20,9 +20,8 @@ const EntryRow = ({ entry }) => {
     <div className="tableRow">
       <Table.Row>
         <strong className="employeeList">
-          {/* {empId && console.log(empId)} */}
-          {/* <img className="Img" src={empImg} alt="" /> */}
-          <p className="emp_id">{emp_id}</p>
+          <img className="Img" src={empImg} alt="" />
+
           <p className="empName">{emp_name}</p>
         </strong>
       </Table.Row>

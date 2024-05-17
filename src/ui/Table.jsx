@@ -26,7 +26,7 @@ const Row = ({ children, emp_id }) => {
   const { columns } = useContext(TableContext);
 
   return (
-    <div className="styledRow" role="row" id={emp_id} columns={columns}>
+    <div className="styledRow effect5" role="row" id={emp_id} columns={columns}>
       {children}
     </div>
   );

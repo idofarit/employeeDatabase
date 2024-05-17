@@ -6,7 +6,6 @@ import Menus from "./Menus";
 import Table from "./Table";
 import EntryRow from "../entry/EntryRow";
 import AddEntry from "../entry/AddEntry";
-import { getEntrys } from "../api/apiEntry";
 
 const EntryTable = () => {
   const { isLoading, entrys } = useEntrys();
@@ -20,7 +19,7 @@ const EntryTable = () => {
       <Menus>
         <Table>
           <Table.Header>
-            <div>Employee ID</div>
+            <div>Employee</div>
             <div>Emp Name</div>
             <div>edit/Delete</div>
           </Table.Header>

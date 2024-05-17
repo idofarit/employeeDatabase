@@ -37,7 +37,13 @@ const Toggle = ({ id }) => {
 
   return (
     <button className="styledToggle" onClick={handleClick}>
-      <FaEllipsisVertical />
+      <div className="hover-text">
+        <FaEllipsisVertical />
+
+        <span className="tooltip-text" id="bottom">
+          Click to see details
+        </span>
+      </div>
     </button>
   );
 };
