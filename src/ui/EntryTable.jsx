@@ -6,6 +6,7 @@ import Menus from "./Menus";
 import Table from "./Table";
 import EntryRow from "../entry/EntryRow";
 import AddEntry from "../entry/AddEntry";
+import AddSearch from "../components/AddSearch";
 
 const EntryTable = () => {
   const { isLoading, entrys } = useEntrys();
@@ -16,6 +17,7 @@ const EntryTable = () => {
 
   return (
     <div>
+      <AddSearch />
       <Menus>
         <Table>
           <Table.Header>
