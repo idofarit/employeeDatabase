@@ -14,7 +14,7 @@ const Input = () => {
   };
 
   return (
-    <div>
+    <>
       <input
         id="emp_name"
         className="search"
@@ -22,7 +22,7 @@ const Input = () => {
         onChange={(e) => setQuery(e.target.value.toLowerCase())}
       />
       {<TableSearch entry={search(entrys)} query={query} />}
-    </div>
+    </>
   );
 };
 

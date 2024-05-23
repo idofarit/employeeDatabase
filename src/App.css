@@ -144,6 +144,7 @@ p {
 }
 
 .styledList {
+  z-index: 1000;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -278,8 +279,8 @@ p {
 }
 .employeeList {
   display: grid;
-  grid-template-columns: 0fr 3fr;
-  padding: 0 1rem;
+  grid-template-columns: 0fr 6fr;
+  padding: 0 2rem;
   .Img {
     border-radius: 50%;
     height: 30px;
@@ -453,4 +454,23 @@ p {
   font-family: "Times New Roman", Times, serif;
 
   text-align: center;
+}
+
+.search {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+.tableSearch {
+  padding: 0.5rem;
+  height: 200px;
+  overflow: auto;
+  background: var(--backdrop-color);
+  width: 100%;
+  border-radius: 10px;
+}
+.tableSearch::-webkit-scrollbar {
+  display: none;
 }

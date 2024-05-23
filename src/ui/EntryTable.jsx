@@ -16,8 +16,7 @@ const EntryTable = () => {
   if (!entrys.length) return <Empty resourceName="Entrys" />;
 
   return (
-    <div>
-      <AddSearch />
+    <div className="entryTableContainer">
       <Menus>
         <Table>
           <Table.Header>
@@ -25,6 +24,7 @@ const EntryTable = () => {
             <div>Emp Name</div>
             <div>edit/Delete</div>
           </Table.Header>
+          <AddSearch />
           <div className="employeeSection">
             <Table.Body
               data={entrys}
