@@ -495,7 +495,6 @@ input {
 .search-bar input,
 .search-btn {
   width: 3em;
-  height: 3em;
 }
 .search-bar input:invalid:not(:focus),
 .search-btn {
