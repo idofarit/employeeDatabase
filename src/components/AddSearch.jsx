@@ -8,9 +8,7 @@ const AddSearch = () => {
     <div>
       <Modal>
         <Modal.Open opens="search-form">
-          <button>
-            <FaSearch />
-          </button>
+          <button>Search here</button>
         </Modal.Open>
         <Modal.Window name="search-form">
           <Input />

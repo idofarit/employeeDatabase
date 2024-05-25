@@ -14,15 +14,25 @@ const Input = () => {
   };
 
   return (
-    <>
-      <input
-        id="emp_name"
-        className="search"
-        placeholder="Search..."
-        onChange={(e) => setQuery(e.target.value.toLowerCase())}
-      />
-      {<TableSearch entry={search(entrys)} query={query} />}
-    </>
+    <div className="search-container">
+      <div className="search-bar">
+        <div className="input-container">
+          <input
+            type="search"
+            onChange={(e) => setQuery(e.target.value.toLowerCase())}
+            name="search"
+            pattern=".*\S.*"
+            required
+          />
+          <button className="search-btn"></button>
+        </div>
+        {query === "" ? (
+          ""
+        ) : (
+          <TableSearch entry={search(entrys)} query={query} />
+        )}
+      </div>
+    </div>
   );
 };
 

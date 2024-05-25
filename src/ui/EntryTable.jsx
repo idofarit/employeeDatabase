@@ -22,9 +22,9 @@ const EntryTable = () => {
           <Table.Header>
             <div>Employee</div>
             <div>Emp Name</div>
-            <div>edit/Delete</div>
+
+            <AddSearch />
           </Table.Header>
-          <AddSearch />
           <div className="employeeSection">
             <Table.Body
               data={entrys}
