@@ -21,6 +21,7 @@ const Input = () => {
             type="search"
             onChange={(e) => setQuery(e.target.value.toLowerCase())}
             name="search"
+            placeholder="serach by name; ex: rahul"
             pattern=".*\S.*"
             required
           />

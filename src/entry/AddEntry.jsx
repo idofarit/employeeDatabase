@@ -1,13 +1,16 @@
 import React from "react";
 import Modal from "../Modal";
 import CreateEntryForm from "./CreateEntryForm";
+import { FaPlus } from "react-icons/fa6";
 
 const AddEntry = () => {
   return (
     <div>
       <Modal>
         <Modal.Open opens="car-form">
-          <button>Add Employee Entry</button>
+          <button>
+            <FaPlus />
+          </button>
         </Modal.Open>
         <Modal.Window name="car-form">
           <CreateEntryForm />
