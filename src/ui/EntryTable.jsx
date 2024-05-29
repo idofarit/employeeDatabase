@@ -37,15 +37,13 @@ const EntryTable = () => {
       <Menus>
         <Table>
           <Table.Header>
-            <div>Employee</div>
-            <div>Emp Name</div>
-            <div>
-              <Filter
-                filterItems={filterItems}
-                onFilterValueSelected={onFilterValueSelected}
-                setItems={setItems}
-              />
-            </div>
+            <Filter
+              filterItems={filterItems}
+              onFilterValueSelected={onFilterValueSelected}
+              setItems={setItems}
+            />
+
+            <AddSearch />
           </Table.Header>
           <div className="employeeSection">
             {items === undefined ? (
@@ -62,7 +60,6 @@ const EntryTable = () => {
           </div>
           <div className="elem2">
             <AddEntry />
-            <AddSearch />
           </div>
         </Table>
       </Menus>
