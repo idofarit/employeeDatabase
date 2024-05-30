@@ -1,6 +1,6 @@
 .skeleton {
   border-radius: 2px;
-  /* display: inline-block; */
+  margin: auto;
   display: flex;
   margin-top: 2rem;
   line-height: 100%;

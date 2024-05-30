@@ -523,7 +523,6 @@ input {
 }
 .search-bar {
   margin: auto;
-  padding: 1.5em;
   justify-content: center;
   max-width: 30em;
   flex-direction: column;
@@ -618,25 +617,20 @@ input {
   transform: translateY(1px);
 }
 
-@media screen and (prefers-color-scheme: dark) {
-  body,
-  input {
-    color: #f1f1f1;
-  }
-  body {
-    background: #171717;
-  }
-  .search-bar input {
-    box-shadow: 0 0 0 0.4em #f1f1f1 inset;
-  }
-  .search-bar input:focus,
-  .search-bar input:valid {
-    background: #3d3d3d;
-    box-shadow: 0 0 0 0.1em #3d3d3d inset;
-  }
-  .search-btn {
-    background: #f1f1f1;
-  }
+input {
+  color: #f1f1f1;
+}
+
+.search-bar input {
+  box-shadow: 0 0 0 0.4em #f1f1f1 inset;
+}
+.search-bar input:focus,
+.search-bar input:valid {
+  background: #3d3d3d;
+  box-shadow: 0 0 0 0.1em #3d3d3d inset;
+}
+.search-btn {
+  background: #f1f1f1;
 }
 
 /* filter button */
@@ -664,4 +658,58 @@ select {
   border: none;
   background: #242424;
   height: 30px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1100px) {
+  .homeLayout {
+    width: 70vw;
+  }
+  .tableRow {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .homeLayout {
+    width: 90vw;
+  }
+  .tableRow {
+    width: 72vw;
+  }
+  .employeeList p {
+    font-size: 1rem;
+  }
+  .styledToggle {
+    transform: translate(-0.8rem, 1.5rem);
+  }
+  .styledHeader {
+    gap: 4.5rem;
+  }
+  .search-container {
+    width: 61vw;
+  }
+
+  .mainFormRow {
+    grid-template-columns: 5rem 1fr 1.2fr;
+    gap: 1.4rem;
+    height: 4rem;
+  }
+  .mainFormRow input {
+    width: 35vw;
+  }
+  .styleModal {
+    width: 70%;
+    padding: 4.2rem 1.8rem;
+  }
+
+  form {
+    height: 50vh;
+    overflow: scroll;
+  }
+
+  form::-webkit-scrollbar {
+    display: none;
+  }
 }
