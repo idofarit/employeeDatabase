@@ -308,7 +308,7 @@ p {
 
 .menuContainer {
   position: relative;
-  top: -3.3em;
+  top: -3.5em;
 }
 .tableRow {
   width: 22vw;
@@ -476,7 +476,7 @@ p {
   margin-bottom: 20px;
 }
 .tableSearch {
-  padding: 0.5rem;
+  margin-top: 0.5rem;
   height: 200px;
   overflow: auto;
   background: var(--backdrop-color);
@@ -683,7 +683,12 @@ select {
   }
   .styledToggle {
     transform: translate(-0.8rem, 1.5rem);
+    padding-top: 0;
   }
+  .styledRow {
+    padding: 0.5rem 0.8rem;
+  }
+
   .styledHeader {
     gap: 4.5rem;
   }
