@@ -316,6 +316,8 @@ p {
 .showImg {
   height: 100px;
   width: auto;
+  margin: auto;
+  display: flex;
 }
 
 /* skeleton */
