@@ -675,11 +675,14 @@ select {
   .homeLayout {
     width: 90vw;
   }
+  .styledBody {
+    height: 60vh;
+  }
   .tableRow {
     width: 72vw;
   }
   .employeeList p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .styledToggle {
     transform: translate(-0.8rem, 1.5rem);
